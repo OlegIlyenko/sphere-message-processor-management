@@ -1,0 +1,6 @@
+http --session=u1 PATCH localhost:${1}/m/errors/${2}/${3}
+printf "\nEnter Number: "
+read num
+printf "\n\n"
+http --session=u1 PATCH localhost:${1}/m/errors/${2}/${3} yes_i_understand_the_consequences_and_want_to_do_it_now==${num} my_name==oleg
+printf "\n\n"
